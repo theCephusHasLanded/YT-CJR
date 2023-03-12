@@ -6,11 +6,11 @@ The goal of this project is to create a clone of YouTube (plus a bit of personal
 
 ## Table of Contents
 
-|:---|
+| :--- |
 | TBD 1 |
 | TBD 2 |
 | Pursuit |
-|Old ReadMe|
+| Old ReadMe |
 
 ## TBD 1
 
