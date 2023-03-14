@@ -6,7 +6,7 @@ import Footer from './components/common/Footer';
 import Nav from './components/common/Nav';
 // import ErrorMessage from './components/errors/ErrorMessage';
 import Home from './components/landing/Home';
-// import View from './components/video/View';
+import View from './components/video/View';
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/video" element={<View />} />
     </Routes>
     </main>
     <Footer />
