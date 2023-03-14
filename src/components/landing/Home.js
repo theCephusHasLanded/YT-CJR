@@ -6,7 +6,7 @@ const Home = () => {
 // function Search( {onSubmit }) {
 //   const [query, setQuery] = useState("")
 
-//   const handleSubmit = (event) => {
+// const handleSubmit = (event) => {
 // event.preventDefault();
 // onSubmit(query);
 // }
@@ -14,6 +14,18 @@ const Home = () => {
 // const handleChange =(event) => {
 //   setQuery(event.target.value)
 // }
+
+
+// Ray's form
+
+/* return(
+ <div>
+<form>
+ <label for=VideoSearch></label>
+ <input type = "text" placeholder= Search >
+ <input type="submit" id="Query" name="Search" value={query}><br>
+</form>
+</div> */
 
 //   return (
 //     <div>
