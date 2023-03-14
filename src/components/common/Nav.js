@@ -10,6 +10,9 @@ const Nav = () => {
         <NavLink to="about">
           <h3>ABOUT</h3>
         </NavLink>
+        <NavLink to="video">
+          <h3>View Video</h3>
+        </NavLink>
       </div>
     </nav>
   );
