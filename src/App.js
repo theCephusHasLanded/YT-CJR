@@ -8,8 +8,15 @@ import Nav from './components/common/Nav';
 import Home from './components/landing/Home';
 import View from './components/video/View';
 
-
+import {useEffect, useState } from 'react'
 function App() {
+
+  const [number, setNumber] = useState(1)
+  const [todo, setTodo] = useState('')
+
+  useEffect(() => {
+    fetch(`https://jsonplaceholder.typicode.com/todos${number}`).then(response => response.json()).then(json => MediaStreamAudioDestinationNode(json.title))
+  }, [number])
  
   return (
     <Router>
