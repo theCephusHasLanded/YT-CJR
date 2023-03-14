@@ -1,7 +1,6 @@
 
 const API_KEY = `AIzaSyCTA2H0QujmwEucZg81o_5EovQ77oCKZ2A`
 const BASE_URL = `https://youtube.googleapis.com/youtube/v3/search?q=${searchTerm}&part=snippet&maxResults=10&key=${API_KEY}`
-const searchTerm = 
 
 //to GET all the videos listing index being searched for.
 export function getQueryVideos(searchTerm) {

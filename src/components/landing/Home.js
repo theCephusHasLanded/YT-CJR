@@ -1,5 +1,6 @@
 // import View from '../video/View'
 // import React, { useState } from 'react';
+import { getQueryVideos } from "../../api/fetch"
 
 const Home = () => {
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from '../landing/Home';
+import { getOneVideo } from '../../api/fetch';
 
 const VideoCards = (handleSubmit, videoData) => {
   return (
