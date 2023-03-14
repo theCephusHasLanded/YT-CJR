@@ -9,7 +9,7 @@ const About = () => {
             </p>
 
       <p> Give our regards to Broadway!</p>
-            </p>
+            
     </div>
   )
 }
