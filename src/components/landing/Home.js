@@ -4,6 +4,11 @@ import { getQueryVideos } from "../../api/fetch"
 
 const Home = () => {
 
+// const [videos, setVideos] = useState("")
+
+
+
+
 // function Search( {onSubmit }) {
 //   const [query, setQuery] = useState("")
 
