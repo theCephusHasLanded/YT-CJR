@@ -15,9 +15,11 @@ function App() {
   const [number, setNumber] = useState(1)
   const [todo, setTodo] = useState('')
 
-  useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/todos${number}`).then(response => response.json()).then(json => MediaStreamAudioDestinationNode(json.title))
-  }, [number])
+
+  //* THIS IS JUST DUMMY PLACEHOLDER TO CONFIGURE THE USEEFFECT.
+  // useEffect(() => {
+  //   fetch(`https://jsonplaceholder.typicode.com/todos${number}`).then(response => response.json()).then(json => MediaStreamAudioDestinationNode(json.title))
+  // }, [number])
  
   return (
     <Router>
