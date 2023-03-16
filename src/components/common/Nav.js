@@ -1,8 +1,7 @@
 // import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 
-const Nav = () => {
-  
+const Nav = () => {  
   return (
     <nav id='menu'>
       <div>
