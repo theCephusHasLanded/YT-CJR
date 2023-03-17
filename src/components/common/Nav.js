@@ -1,8 +1,10 @@
 // import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
-
+import SearchForm from "../video/SearchForm";
 const Nav = () => {  
+
   return (
+   
     <nav id='menu'>
       <div>
         <NavLink to="/">
@@ -14,6 +16,7 @@ const Nav = () => {
         <NavLink to="video">
         </NavLink>
       </div>
+      <SearchForm />  
     </nav>
   );
 };

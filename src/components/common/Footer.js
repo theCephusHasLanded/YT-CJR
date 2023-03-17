@@ -10,6 +10,7 @@ const Footer = () => {
       </div>
       <span>Powered by</span>
       <CLink href="https://www.pursuit.org/">Pursuit</CLink>
+      <a href="https://icons8.com/icon/DI6zcEak7cFp/youtube-logo">YouTube Logo</a> icon by <a href="https://icons8.com">Icons8</a>
     </div>
   );
 };
