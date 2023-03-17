@@ -29,6 +29,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/video" element={<View />} />
+        
     </Routes>
     </main>
     <Footer />
@@ -37,3 +38,6 @@ function App() {
 }
 
 export default App;
+
+// app.js is the brain.  
+// Routes are displayed in the url segment. Lines 

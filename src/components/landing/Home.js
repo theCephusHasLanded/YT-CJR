@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { getQueryVideos } from '../../api/fetch';
 import { getOneVideo } from '../../api/fetch';
 
+
 const Home = () => {
     const [query, setQuery] = useState('');
 
@@ -31,3 +32,4 @@ return (
 };
 
 export default Home;
+
