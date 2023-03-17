@@ -1,29 +1,45 @@
-import React from 'react'
-import Home from '../landing/Home';
-import { getOneVideo } from '../../api/fetch';
+import { useState } from "react";
+import { useLocation, Link } from "react-router-dom";
+import ErrorMessage from "../errors/ErrorMessage";
 
-const VideoCards = (handleSubmit, videoData) => {
+const VideoCards = () => {
+  const [loadingError, setLoadingError] = useState(false);
+  // we need to call the location and save the information we are getting from useNavigate
+  const location = useLocation();
+  const videoList = location.state.res;
+  console.log(videoList);
+
   return (
-    <div className="card">
-      
-    {videoData.map((video, i) => {
-      return (
-        <div key={video.id} className="videos">
-            <li className="cards" key={video.id}>
-              <h4>
-                <strong>{video.name}</strong>
-              </h4>
-              <img className="img" src={video.img} alt="videoimage" />
-              <br></br>
-            
-              <button onClick={() => handleSubmit(video, i)}>Watch Me</button>
-            </li>
-          </div>
-      );
-    })}
-</div>
+    
+    <div>
+        <div>
+        <h1>WELCOME TO THE YOUTUBE PARTY</h1>
+    </div>
+      {loadingError ? (
+        ErrorMessage
+      ) : (
+        <div>
+          {videoList.items.map((video) => (
+            <div className="card">
+              <ul>
+                <li key={video.id.videoId}>
+                  <Link to={`/videos/${video.id.videoId}`}>
+                  {/* consider link as an anchor tag -- there are attributes  */}
+                    <img
+                      src={video.snippet.thumbnails.medium.url}
+                      alt={video.snippet.title}
+                    />
+                    <h2>{video.snippet.title}</h2>
+                    <p>{video.snippet.description}</p>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
-  )
-}
-
-export default VideoCards
+export default VideoCards;
