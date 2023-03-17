@@ -10,26 +10,25 @@ const VideoCards = () => {
   console.log(videoList);
 
   return (
-    
     <div>
-        <div>
+      <div>
         <h1>WELCOME TO THE YOUTUBE PARTY</h1>
-    </div>
+      </div>
       {loadingError ? (
         ErrorMessage
       ) : (
-        <div>
+        <div className="video-cards-container">
           {videoList.items.map((video) => (
             <div className="card">
               <ul>
                 <li key={video.id.videoId}>
                   <Link to={`/videos/${video.id.videoId}`}>
-                  {/* consider link as an anchor tag -- there are attributes  */}
+                    {/* consider link as an anchor tag -- there are attributes  */}
                     <img
                       src={video.snippet.thumbnails.medium.url}
                       alt={video.snippet.title}
                     />
-                    <h2>{video.snippet.title}</h2>
+                    <h3>{video.snippet.title}</h3>
                     <p>{video.snippet.description}</p>
                   </Link>
                 </li>

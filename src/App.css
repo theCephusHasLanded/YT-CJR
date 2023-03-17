@@ -77,9 +77,74 @@
   li {
     list-style: none;
   }
+  ul {
+    list-style: none;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; */
+  }
 
-  /* .card {
-    align-items: center;
+  .video-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    background-color: rgb(122, 108, 131);
     justify-content: center;
-  } */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #441149;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    margin-bottom: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .overlay:hover {
+    cursor: pointer;
+  }
   
