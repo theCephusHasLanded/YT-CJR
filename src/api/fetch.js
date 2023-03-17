@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_KEY = 'AIzaSyCTA2H0QujmwEucZg81o_5EovQ77oCKZ2A';
+const API_KEY = 'AIzaSyBjuB_pzF-3u-eA98mDhotDC40GiXGE87E';
 
 //To GET all the videos listing index being searched for.
 
