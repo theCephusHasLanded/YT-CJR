@@ -47,4 +47,39 @@
     color: #ece18f;
   }
   
+  /* Searchbar */
+  input[type="text"] {
+    font-family: 'Climate Crisis';
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    font-family: 'Climate Crisis';
+    font-size: 16px;
+  }
+
+  .clear {
+    font-family: 'Climate Crisis';
+    font-size: 16px;
+  }
+  /* About */
+
+  .about h3 span {
+    font-family: 'Climate Crisis';
+  }
+
+  .about-container {
+    text-align: center;
+  }
+
+  /* Videos */
+
+  li {
+    list-style: none;
+  }
+
+  /* .card {
+    align-items: center;
+    justify-content: center;
+  } */
   

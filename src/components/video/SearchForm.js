@@ -1,66 +1,61 @@
-import React from "react";
-import { useState, useEffect} from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getQueryVideos } from "../../api/fetch";
-import { BrowserRouter as  Routes, Route, Link} from "react-router-dom";
+// import { useParams } from "react-router-dom";
 
 const SearchForm = () => {
   const [query, setQuery] = useState("");
-  const [videos, setVideos] = useState([]);
-  const [showVideos, setShowVideos] = useState(false);
-  const navigate = useNavigate()
+  //   const [videos, setVideos] = useState([]);
+  //   const [showVideos, setShowVideos] = useState(false);
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    async function fetchData() {
-      const data = await getQueryVideos(query);
-      setVideos(data.items);
-    }
-    fetchData();
-    console.log(fetchData);
-  }, [query]);
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const data = await getQueryVideos(query);
-    setVideos(data.items);
-    setShowVideos(true);
-  };
+  //   useEffect(() => {
+  //     async function fetchData() {
+  //       const data = await getQueryVideos(query);
+  //       setVideos(data.items);
+  //     }
+  //     fetchData();
+  //     console.log(fetchData);
+  //   }, [query]);
 
   const handleChange = (event) => {
-    event.preventDefault();
-    setQuery(event.target.value);
+    setQuery(event.target.value)
+    // setting the query to the value of the input -- blueprint -- 
+    // setQuery(event.target.value);
   };
 
-  const handleVideoClick = (videoId) =>{
-    navigate(`/video/${videoId}`);
-  }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    getQueryVideos(query).then((res) => {
+        // we are creating an obj with the key value pair of state not "useState" -- this is navigate specifc
+        navigate("/videos", { state : {res} })
+    })
+    setQuery("")
+    // const data = await getQueryVideos(query);
+    // setVideos(data.items);
+    // setShowVideos(true);
+  };
+
+  //   const handleClear = () => {
+  //     setQuery("");
+  //     setShowVideos(false);
+  //   };
+
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(event) => handleSubmit(event)}>
         <label htmlFor="VideoSearch"></label>
         <input
           type="text"
           placeholder="Search"
           value={query}
-          onChange={handleChange}
+          onChange={(event) => handleChange(event)}
         />
         <input type="submit" id="Query" name="Search" value="SEARCH" />
+        <button className="clear">
+          CLEAR
+        </button>
       </form>
-      {showVideos && (
-        <div>
-          {videos.map((video) => (
-            <div key={video.id.videoId} onClick={() => handleVideoClick(video.id.videoId)}>
-                
-              <img
-                src={video.snippet.thumbnails.medium.url}
-                alt={video.snippet.title}
-              />
-              <h2>{video.snippet.title}</h2>
-              <p>{video.snippet.description}</p>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
 };
