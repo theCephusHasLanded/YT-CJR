@@ -22,6 +22,7 @@ function App() {
         <Route path="/videos/:id" element={<Video />} />
         {/* the colon is a placeholder expecting the id */}
         <Route path="/about" element={<About />} />
+        <Route path="/video" element={<View />} />
     </Routes>
     </main>
     <Footer />
@@ -30,3 +31,6 @@ function App() {
 }
 
 export default App;
+
+// app.js is the brain.  
+// Routes are displayed in the url segment. Lines 
