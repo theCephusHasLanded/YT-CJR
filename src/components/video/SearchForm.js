@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getQueryVideos } from "../../api/fetch";
-import ErrorMessage from "../errors/ErrorMessage";
+import ModalWindow from "../errors/ModalWindow";
+// import ErrorMessage from "../errors/ErrorMessage";
 // import { useParams } from "react-router-dom";
 
 const SearchForm = () => {
@@ -28,18 +29,19 @@ const SearchForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    getQueryVideos(query)
-      .then((res) => {
-        console.log(res);
-        navigate("/videos", { state: { res } });
-        setLoadingError(false);
-      })
-      .catch((error) => {
-        console.log(error);
-        setLoadingError(true);
-        window.alert("Something went wrong.");
-      });
-    setQuery("");
+    getQueryVideos(query).then((res) => {
+        // we are creating an obj with the key value pair of state not "useState" -- this is navigate specific
+        console.log(res)
+        navigate("/videos", { state : {res} })
+    }).catch((error) => {
+      <ModalWindow />
+      console.log(error);
+    });
+    
+    setQuery("")
+    // const data = await getQueryVideos(query);
+    // setVideos(data.items);
+    // setShowVideos(true);
   };
   
 
