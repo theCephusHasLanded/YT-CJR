@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import "./ErrorMessage.css"
-
 function ModalWindow() {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    // Redirect the user to the home page
+    window.location.href = '/';
+    setShow(false);
+  };
+
   const handleShow = () => setShow(true);
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch static backdrop modal
+      <Button variant="secondary" onClick={handleShow}>
+        *Modal Window Prompt: For Grading Purposes*
       </Button>
 
       <Modal
@@ -25,10 +28,10 @@ function ModalWindow() {
           <Modal.Title>Danger Will Robinson!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        You have reached an error.
+          You have reached an error.
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>
@@ -38,35 +41,3 @@ function ModalWindow() {
 }
 
 export default ModalWindow;
-
-
-
-/*
-WAS:
-
-import React from "react"
-import "./ErrorMessage"
-
-
-export default function ModalWindow() {
-
-    return (
-    // Trigger/Open The Modal -->
-    <>
-    <button id="myBtn">Open npm Modal</button>
-
-    {/* <!-- The Modal --> *
-    <div id="myModal" className="modal">
-
-    {/*    // <!-- Modal content --> *
-
-    <div className="modal-content">
-        <span className="close">&times;</span>
-        <p>Some text in the Modal..</p>
-    </div>
-
-    </div>
-</>
-    )
-}
-*/

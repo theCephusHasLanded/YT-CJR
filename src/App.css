@@ -6,7 +6,7 @@
 } */
 
 .footer {
-  display: flex;
+  display: -webkit-inline-flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(197, 170, 212);
@@ -26,13 +26,18 @@
   font-size: large;
 }
 
+@media only screen and (max-width: 390px) {
+  .video-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 main {
-  /*same or more bottom padding than footer height */
-  
   padding-bottom: 50px;
-  height: auto;
+  height: 100%;
   background-color: #b89dba;
+  overflow-y: scroll;
 }
 
 /* Navbar */
@@ -58,13 +63,13 @@ main {
 #menu h3 {
   margin: 0;
   font-size: 1.5rem;
-  font-family: "Climate Crisis";
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 #menu a {
-  text-decoration: underline;
+  text-decoration: solid;
   color: var(--cui-footer-color);
   transition: color 0.3s;
 }
@@ -75,18 +80,19 @@ main {
 
 /* Searchbar */
 input[type="text"] {
-  font-family: "Climate Crisis";
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
 }
 
 input[type="submit"] {
-  font-family: "Climate Crisis";
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
 }
 
 .clear {
-  font-family: "Climate Crisis";
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
+  
 }
 
 /* About */
@@ -99,7 +105,7 @@ input[type="submit"] {
 }
 
 .about h3 span {
-  font-family: "Climate Crisis";
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .about-container {
@@ -113,13 +119,10 @@ li {
 }
 ul {
   list-style: none;
-  /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px; */
 }
 
 .video-cards-container {
-  display: grid;
+  display: flexbox;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
@@ -131,12 +134,13 @@ ul {
   text-align: center;
   position: relative;
   overflow: hidden;
-  border: 10px double #441149;
+  border: 15px single #441149;
   margin: 10px;
   padding: 10px;
   padding-right: 40px;
+  padding-left: 40px;
   padding-top: 40px;
-  display: flex;
+  display: flexbox;
 }
 
 .card:hover .overlay {
@@ -150,7 +154,7 @@ ul {
 }
 
 .card-info {
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   justify-content: center;
 }
@@ -174,7 +178,7 @@ ul {
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  display: flexbox;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -185,8 +189,14 @@ ul {
   cursor: pointer;
 }
 
-h1 span {
-  text-decoration: underline;
+h4 {
+  text-decoration: underline 5px;
+  text-align: center;
+}
+
+.choice {
+  font-family: 'Exo';
+  color: rgb(81, 67, 87)
 }
 
 .error {

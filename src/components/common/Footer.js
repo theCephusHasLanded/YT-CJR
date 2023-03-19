@@ -10,7 +10,7 @@ const Footer = () => {
         <span>2023 An Untamed Glories | LKHN | Rayology Collaboration</span>
       </div>
       <div className='footer__left'>
-      <span>Powered by</span>
+      <span>Powered by </span>
       <CLink href="https://www.pursuit.org/"><span>Pursuit</span></CLink>
       </div>
       <div>

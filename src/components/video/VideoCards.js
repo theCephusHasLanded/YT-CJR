@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
-// es-lint-disable-next-line
-import ErrorMessage from "../errors/ErrorMessage";
 import ModalWindow from "../errors/ModalWindow";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const VideoCards = () => {
   const [loadingError, setLoadingError] = useState(false);
-  // we need to call the location and save the information we are getting from useNavigate
   const location = useLocation();
   const videoList = location.state.res;
   console.log(videoList);
@@ -14,7 +13,9 @@ const VideoCards = () => {
   return (
     <div>
       <div>
-        <h1><span>WELCOME TO THE YOUTUBE PARTY!</span></h1>
+        <br></br>
+        <h4 className="choice">Choose YouTube Destiny Below:</h4>
+        <hr></hr>
       </div>
 
       {loadingError ? (
@@ -22,21 +23,17 @@ const VideoCards = () => {
       ) : (
         <div className="video-cards-container">
           {videoList.items.map((video) => (
-            <div className="card">
-              <ul>
-                <li key={video.id.videoId}>
+            <div className="card" key={video.id.videoId}>
+              <Card>
+                <Card.Img variant="top" src={video.snippet.thumbnails.medium.url} alt={video.snippet.title} />
+                <Card.Body>
+                  <Card.Title>{video.snippet.title}</Card.Title>
+                  <Card.Text>{video.snippet.description}</Card.Text>
                   <Link to={`/videos/${video.id.videoId}`}>
-                    {/* consider link as an anchor tag -- there are attributes  */}
-                    <img
-                      src={video.snippet.thumbnails.medium.url}
-                      alt={video.snippet.title}
-                    />
-                    <h3>{video.snippet.title}</h3>
-                    <br></br>
-                    <p>{video.snippet.description}</p>
+                    <Button variant="secondary">Watch Now</Button>
                   </Link>
-                </li>
-              </ul>
+                </Card.Body>
+              </Card>
             </div>
           ))}
         </div>

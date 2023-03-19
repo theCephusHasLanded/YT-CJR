@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import About from './components/common/About';
 import Footer from './components/common/Footer';
-import Nav from './components/common/Nav';
+import Navi from './components/common/Navi';
 // import ErrorMessage from './components/errors/ErrorMessage';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -16,7 +16,7 @@ function App() {
 // epiphany: to display all videos the path 
   return (
     <Router>
-      <Nav />
+      <Navi />
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
