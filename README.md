@@ -16,7 +16,7 @@ This YouTube clone was made with React, Javascript, HTML, CSS, BootStrap, CUI, a
 * YouTube API
 
 ## Links
-
+* [Trello](https://trello.com/invite/b/iyuVqZQf/ATTIdac181100afc2736156a72480ba9b62bC5638104/youtube-clone-project)
 * [Github Repo](https://github.com/theCephusHasLanded/YT-CJR)
 * [Hosted Site](https://ytcrj-youtube-clone.netlify.app/)
 
