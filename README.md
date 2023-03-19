@@ -26,11 +26,11 @@ This YouTube clone was made with React, Javascript, HTML, CSS, BootStrap, CUI, a
 ## Functionality
 >
 <img width="250" alt="Screenshot 2023-03-19 at 4 21 11 PM" src="https://user-images.githubusercontent.com/113807743/226207245-2fcc5588-6f34-4d75-a470-ad24651d3482.png">
->
+
 **The Modal Window Button is here for Grading Purposes to show proper functionality once invoked.**
->
+
 <img width="250" alt="Screenshot 2023-03-19 at 4 14 37 PM" src="https://user-images.githubusercontent.com/113807743/226207355-ea85cd8a-15a5-4137-94ef-c470ccc5d0b1.png">
->
+
 
 ## Pursuit Transformation Company
 
