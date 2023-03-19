@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/videos" element={<VideoCards />} />
-        <Route path="/video/:id" element={<Video />} />
+        <Route path="/videos/:id" element={<Video />} />
         {/* the colon is a placeholder expecting the id */}
         <Route path="/about" element={<About />} />
     </Routes>
