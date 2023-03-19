@@ -1,3 +1,61 @@
+
+// We need to have a unique key for each Video. But those should already exists in the fetch. So hw do we access that?
+
+
+//I've changed Error message to what we had originally, which is related to the crud lab.
+
+
+
+
+/* ============== ERRORS =========
+from 
+
+
+
+//const [ loading, setLoading ] =  useState(false)
+
+// const onFetchDataClicked = async () => {
+//   setLoading(true);
+//   const res = await fetchSomeData();
+//   setLoading(false);
+//   setItem(res.data);
+// }
+
+// const [ data, setData ] = useState([]);
+// const [ isLoading, setIsLoading ] = useState(false);
+
+
+// useEffect(() => {
+// setIsLoading(true);
+// axios.get(".....")
+// .then(data => {
+//   setData(data);  //update stte with response
+// })
+// .catch(error => {
+//   //handle any errors/rejected Promises
+// })
+// .finally(() => setIsLoading(false)); //complete loading success/fail
+// },[]);
+
+// if (isLoading) return <Landing  />;
+// return data.map(...)
+
+
+
+
+//  you would toggle an isLoading state true immediately prior to making the async requestAnimationFrame, setting it back to false when fetch is complete and you have enqueued a state update.
+
+//const [loadingError, setLoadingError] = useState(false);
+
+
+
+
+
+
+
+=========== FOOTER ===============
+
+
 import Footer from "./components/common/Footer";
 
 Footer
@@ -66,3 +124,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 
+*/

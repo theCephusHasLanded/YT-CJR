@@ -7,12 +7,28 @@
     height: var(--cui-footer-min-height);
     padding: var(--cui-footer-padding-y) var(--cui-footer-padding-x);
     border: var(--cui-footer-border-width) solid var(--cui-footer-border-color);
+    position: fixed;
+    bottom: 0; left: 0; z-index: 9;
+    width: 100%; height:40px;
+
   }
   
   .footer__center {
     background-color: rgb(197, 170, 212);
   }
   
+  .footer__left {
+    font-size: smaller;
+  }
+
+  main {
+    /*same or more bottom padding than footer height */
+    padding-bottom: 50px;
+  }
+  
+  
+  /* #pageMain {padding-bottom: 50px;} */
+
   /* Navbar */
   #menu {
     background: linear-gradient(to bottom right, rgb(197, 170, 212), rgb(94, 53, 177));
@@ -62,6 +78,7 @@
     font-family: 'Climate Crisis';
     font-size: 16px;
   }
+
   /* About */
 
   .about h3 span {

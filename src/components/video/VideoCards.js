@@ -15,7 +15,7 @@ const VideoCards = () => {
         <h1>WELCOME TO THE YOUTUBE PARTY</h1>
       </div>
       {loadingError ? (
-        ErrorMessage
+        <ErrorMessage />
       ) : (
         <div className="video-cards-container">
           {videoList.items.map((video) => (
