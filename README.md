@@ -21,7 +21,7 @@ This YouTube clone was made with React, Javascript, HTML, CSS, BootStrap, CUI, a
 ## Links
 
 * [Github Repo](https://github.com/theCephusHasLanded/YT-CJR)
-* [Hosted Site](https://)
+* [Hosted Site](https://ytcrj-youtube-clone.netlify.app/)
 
 ## Functionality
 <img width="250" alt="Screenshot 2023-03-19 at 4 21 11 PM" src="https://user-images.githubusercontent.com/113807743/226207245-2fcc5588-6f34-4d75-a470-ad24651d3482.png">
