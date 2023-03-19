@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
+// es-lint-disable-next-line
 import ErrorMessage from "../errors/ErrorMessage";
+import ModalWindow from "../errors/ModalWindow";
 
 const VideoCards = () => {
   const [loadingError, setLoadingError] = useState(false);
@@ -14,8 +16,9 @@ const VideoCards = () => {
       <div>
         <h1>WELCOME TO THE YOUTUBE PARTY</h1>
       </div>
+      setLoadingError=false
       {loadingError ? (
-        <ErrorMessage />
+        <ModalWindow />
       ) : (
         <div className="video-cards-container">
           {videoList.items.map((video) => (
