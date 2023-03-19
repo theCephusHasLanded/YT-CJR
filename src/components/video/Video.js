@@ -8,9 +8,10 @@ import React from 'react'
 const Video = () => {
 
   return (
-    <div>
-      {/* Display the one video */}
-    </div>
+    <Youtube>
+
+      
+    </Youtube>
   )
 }
 

@@ -34,4 +34,5 @@ function App() {
 export default App;
 
 // app.js is the brain.  
-// Routes are displayed in the url segment. Lines 
+/* Routes are displayed in the url segment. The element says what is going
+to be displayed */
