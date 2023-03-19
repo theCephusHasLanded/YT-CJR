@@ -11,7 +11,10 @@ const Footer = () => {
       </div>
       <div className='footer__left'>
       <span>Powered by</span>
-      <CLink href="https://www.pursuit.org/">Pursuit</CLink>
+      <CLink href="https://www.pursuit.org/"><span>Pursuit</span></CLink>
+      </div>
+      <div>
+      <CLink href="https://unsplash.com/de/@nasa?utm_source=trello&utm_medium=referral&utm_campaign=api-credit">SplashCred</CLink>
       </div>
     </div>
   );

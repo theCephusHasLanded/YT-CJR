@@ -12,7 +12,7 @@ const VideoCards = () => {
   return (
     <div>
       <div>
-        <h1>WELCOME TO THE YOUTUBE PARTY</h1>
+        <h1><span>WELCOME TO THE YOUTUBE PARTY!</span></h1>
       </div>
       {loadingError ? (
         <ErrorMessage />
@@ -29,6 +29,7 @@ const VideoCards = () => {
                       alt={video.snippet.title}
                     />
                     <h3>{video.snippet.title}</h3>
+                    <br></br>
                     <p>{video.snippet.description}</p>
                   </Link>
                 </li>

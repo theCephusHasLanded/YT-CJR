@@ -1,10 +1,10 @@
-import SearchForm from "../video/SearchForm";
+import nasa from "../../assets/NYCNasa.jpg";
 
 const Home = () => {
 return (
-    <div>
-        <h1>WELCOME TO THE YOUTUBE PARTY</h1>
-    </div>
+    <div className="home-container">
+    <img src={nasa} alt="TopView" />
+  </div>
 )
 };
 
