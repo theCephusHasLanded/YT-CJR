@@ -5,6 +5,8 @@ import About from './components/common/About';
 import Footer from './components/common/Footer';
 import Nav from './components/common/Nav';
 // import ErrorMessage from './components/errors/ErrorMessage';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import Home from './components/landing/Home';
 import Video from './components/video/Video';
 import VideoCards from './components/video/VideoCards';

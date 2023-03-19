@@ -1,12 +1,13 @@
-import ModalWindow from "../errors/ModalWindow";
 
+import ModalWindow from "../errors/ModalWindow";
+import nasa from "../../assets/NYCNasa.jpg";
 
 const Home = () => {
 return (
-    <div>
-        <h1>WELCOME TO THE YOUTUBE PARTY</h1>
-        <ModalWindow />
-    </div>
+    <div className="home-container">
+    <img src={nasa} alt="TopView" />
+    <ModalWindow />
+  </div>
 )
 };
 

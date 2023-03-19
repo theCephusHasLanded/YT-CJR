@@ -7,6 +7,7 @@ import ModalWindow from "../errors/ModalWindow";
 
 const SearchForm = () => {
   const [query, setQuery] = useState("");
+  const [loadingError, setLoadingError] = useState(false);
   //   const [videos, setVideos] = useState([]);
   //   const [showVideos, setShowVideos] = useState(false);
   const navigate = useNavigate();
@@ -21,8 +22,8 @@ const SearchForm = () => {
   //   }, [query]);
 
   const handleChange = (event) => {
-    setQuery(event.target.value)
-    // setting the query to the value of the input -- blueprint -- 
+    setQuery(event.target.value);
+    // setting the query to the value of the input -- blueprint --
     // setQuery(event.target.value);
   };
 
@@ -42,6 +43,7 @@ const SearchForm = () => {
     // setVideos(data.items);
     // setShowVideos(true);
   };
+  
 
   //   const handleClear = () => {
   //     setQuery("");
@@ -49,6 +51,7 @@ const SearchForm = () => {
   //   };
 
   return (
+    <>
     <div>
       <form onSubmit={(event) => handleSubmit(event)}>
         <label htmlFor="VideoSearch"></label>
@@ -59,11 +62,10 @@ const SearchForm = () => {
           onChange={(event) => handleChange(event)}
         />
         <input type="submit" id="Query" name="Search" value="SEARCH" />
-        <button className="clear">
-          CLEAR
-        </button>
+        <button className="clear">CLEAR</button>
       </form>
     </div>
+   </>
   );
 };
 

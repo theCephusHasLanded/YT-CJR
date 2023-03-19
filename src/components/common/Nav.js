@@ -2,13 +2,13 @@
 import { NavLink } from "react-router-dom";
 import SearchForm from "../video/SearchForm";
 // import youLogo from '../assets/you.png';
+import yt from "../../assets/purpleyt.png"
 const Nav = () => {  
-
   return (
    
     <nav id='menu'>
       <div>
-        {/* <img src={youLogo} alt="youtube" /> */}
+      <img className="logo" src={yt} alt="logo" />
         <NavLink to="/">
           <h3>HOME</h3>
         </NavLink>

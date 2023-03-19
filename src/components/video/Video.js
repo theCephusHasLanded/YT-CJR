@@ -7,8 +7,8 @@ const Video = () => {
   let { id } = useParams();
 
   const opts = {
-    height: "900",
-    width: "1000",
+    height: "1000px",
+    width: "100%",
     playerVars: {
       //https://developers.google.com/youtube/player_parameters
       autoplay: 1,
