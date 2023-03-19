@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getQueryVideos } from "../../api/fetch";
+// import ErrorMessage from "../errors/ErrorMessage";
 // import { useParams } from "react-router-dom";
 
 const SearchForm = () => {
@@ -27,9 +28,13 @@ const SearchForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     getQueryVideos(query).then((res) => {
-        // we are creating an obj with the key value pair of state not "useState" -- this is navigate specifc
+        // we are creating an obj with the key value pair of state not "useState" -- this is navigate specific
+        console.log(res)
         navigate("/videos", { state : {res} })
-    })
+    }).catch((error) => {
+      console.log(error);
+    });
+    
     setQuery("")
     // const data = await getQueryVideos(query);
     // setVideos(data.items);

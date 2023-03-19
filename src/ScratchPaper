@@ -1,0 +1,127 @@
+
+// We need to have a unique key for each Video. But those should already exists in the fetch. So hw do we access that?
+
+
+//I've changed Error message to what we had originally, which is related to the crud lab.
+
+
+
+
+/* ============== ERRORS =========
+from 
+
+
+
+//const [ loading, setLoading ] =  useState(false)
+
+// const onFetchDataClicked = async () => {
+//   setLoading(true);
+//   const res = await fetchSomeData();
+//   setLoading(false);
+//   setItem(res.data);
+// }
+
+// const [ data, setData ] = useState([]);
+// const [ isLoading, setIsLoading ] = useState(false);
+
+
+// useEffect(() => {
+// setIsLoading(true);
+// axios.get(".....")
+// .then(data => {
+//   setData(data);  //update stte with response
+// })
+// .catch(error => {
+//   //handle any errors/rejected Promises
+// })
+// .finally(() => setIsLoading(false)); //complete loading success/fail
+// },[]);
+
+// if (isLoading) return <Landing  />;
+// return data.map(...)
+
+
+
+
+//  you would toggle an isLoading state true immediately prior to making the async requestAnimationFrame, setting it back to false when fetch is complete and you have enqueued a state update.
+
+//const [loadingError, setLoadingError] = useState(false);
+
+
+
+
+
+
+
+=========== FOOTER ===============
+
+
+import Footer from "./components/common/Footer";
+
+Footer
+import React from 'react';
+import { CLink } from '@coreui/react';
+
+const Footer = () => {
+  return (
+    <div className="footer">
+      <CLink href="https://github.com/theCephusHasLanded/YT-CJR">Our Github Repository</CLink>
+      <div className="footer__center">
+        <span>&copy; 2023 An Untamed Glories | LKHN | Rayology Collaboration</span>
+      </div>
+      <span>Powered by</span>
+      <CLink href="https://www.pursuit.org/">Pursuit</CLink>
+    </div>
+  );
+};
+
+export default Footer;
+
+
+
+===============NAV=============
+
+// import React, { useState } from 'react';
+import { NavLink } from "react-router-dom";
+
+const Nav = () => {  
+  return (
+    <nav id='menu'>
+      <div>
+        <NavLink to="/">
+          <h3>HOME</h3>
+        </NavLink>
+        <NavLink to="about">
+          <h3>ABOUT</h3>
+        </NavLink>
+        <NavLink to="video">
+        </NavLink>
+      </div>
+    </nav>
+  );
+};
+
+export default Nav;
+
+
+
+================== INDEX -================= Mar17 ============
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+*/
