@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getQueryVideos } from "../../api/fetch";
+import ModalWindow from "../errors/ModalWindow";
 // import ErrorMessage from "../errors/ErrorMessage";
 // import { useParams } from "react-router-dom";
 
@@ -32,6 +33,7 @@ const SearchForm = () => {
         console.log(res)
         navigate("/videos", { state : {res} })
     }).catch((error) => {
+      <ModalWindow />
       console.log(error);
     });
     

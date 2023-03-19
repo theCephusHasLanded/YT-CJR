@@ -16,7 +16,7 @@ const VideoCards = () => {
       <div>
         <h1>WELCOME TO THE YOUTUBE PARTY</h1>
       </div>
-      setLoadingError=false
+
       {loadingError ? (
         <ModalWindow />
       ) : (
