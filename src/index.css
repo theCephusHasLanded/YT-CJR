@@ -1,8 +1,7 @@
-
 body {
   margin: 0;
-align-items: center;
-  font-family: 'Exo', sans-serif;
+  align-items: center;
+  font-family: "Exo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -21,7 +20,6 @@ align-items: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-

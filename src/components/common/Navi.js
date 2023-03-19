@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 import SearchForm from "../video/SearchForm";
-import yt from "../../assets/purpleyt.png"
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import yt from "../../assets/purpleyt.png";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const Navi = () => {  
+const Navi = () => {
   return (
     <Navbar expand="lg">
       <Navbar.Brand>

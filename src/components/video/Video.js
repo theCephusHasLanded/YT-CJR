@@ -1,6 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube";
-import { useParams } from 'react-router-dom'
+import { useParams } from "react-router-dom";
 //class based components work on rendering where the return is placed. on function based it equates on the return line.
 
 const Video = () => {
@@ -25,7 +25,6 @@ const Video = () => {
 };
 
 export default Video;
-
 
 //============PREVIOUS LOGIC=====================
 //   <div className="card">

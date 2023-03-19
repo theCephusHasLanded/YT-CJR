@@ -1,17 +1,16 @@
 .error {
-    border: 1px solid var(--error);
-    margin: 25px;
-    padding: 25px;
-  }
-  .error p {
-    color: var(--error);
-    font-family: var(--primary-font);
-    margin: 25px;
-    text-align: center;
-  }
-  
+  border: 1px solid var(--error);
+  margin: 25px;
+  padding: 25px;
+}
+.error p {
+  color: var(--error);
+  font-family: var(--primary-font);
+  margin: 25px;
+  text-align: center;
+}
 
-  /* The Modal (background) */
+/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   align-items: center;
@@ -22,7 +21,7 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(160, 153, 174, 0.4); /* Black w/ opacity */
 }
 
