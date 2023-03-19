@@ -4,19 +4,13 @@ This YouTube clone was made with React, Javascript, HTML, CSS, BootStrap, CUI, a
 >
 <img width="250" alt="Screenshot 2023-03-19 at 4 15 16 PM" src="https://user-images.githubusercontent.com/113807743/226207326-29509651-fac9-450f-af7d-6f0eb9379553.png">
 
-## Table of Contents
->
-|Technologies Used|
-|Links|
-|Pursuit|
-|Getting Started with Create React App|
->
 ## Technologies Used
 
 * React
 * React Router
 * Core UI for React
 * Bootstrap
+* Netlify
 
 ## Links
 
